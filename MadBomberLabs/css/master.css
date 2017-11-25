@@ -1,0 +1,330 @@
+/* CSS Document */
+
+/* Global Styles */
+	body {
+		background-color: #FFF59C;
+		color: #044389;
+		padding: 20px;
+		margin: 0 auto;
+		max-width: 1200px;
+		min-width: 550px;
+		font-family: Ubuntu, sans-serif;
+		}
+
+	h1 {
+		color: #4D9DE0;
+		margin-top: -10px;
+		}
+	h2 {
+		color: #4D9DE0;
+		margin: 0px 0px 10px 0px;
+		font-size: 1.5em;
+		}
+
+	hr { 
+		display: block;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: auto;
+		margin-right: auto;
+		border-style: inset;
+		border-width: 1px;
+		border-color: #4D9DE0;
+		} 
+
+	.orangelink, .orangelink:hover {
+		color: #FF580C;
+		}
+		
+/* Header Styles */	
+	header {
+		border-radius: 10px;
+		border-color: #4D9DE0;
+		border-style: solid;
+		position: relative;
+		background-color: #E2E9ED;
+		width: 100%;
+		}
+		
+	.pageTitle {
+		font-weight: bold;
+		color: #FF580C;
+		}
+
+/* Nav Menu Styles */
+	.menu-buttons {
+		text-align: center;
+		font-weight: bold;
+		width: 100%;
+		}
+
+	.menu-buttons a {
+		color: #FF580C;
+		}
+		
+	.menu-buttons a:hover {
+		color: #4D9DE0;
+		}
+
+
+/* Main Body Styles */
+	.mainBody {
+		min-height: 500px;
+		font-size: 1.2em;
+		}
+
+	.bodyPar {
+		background-color: #E2E9ED;
+		color: #010A15;
+		font-weight: bold;
+		margin: 10px 0px;
+		padding: 10px;
+		border-radius: 10px;
+		border-color: #4D9DE0;
+		border-style: solid;
+		}
+
+/* Tabbed Services Styles */
+	ul.tab {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		border: 1px solid #4D9DE0;
+		border-radius: 10px;
+		background-color: #f1f1f1;
+		}
+
+	/* Float the list items side by side */
+	ul.tab li {
+		float: left;
+		}
+
+	/* Style the links inside the list items */
+	ul.tab li a {
+		display: inline-block;
+		color: #FF580C;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-weight: bold;
+		transition: 0.3s;
+		}
+
+	/* Change background color of links on hover */
+	ul.tab li a:hover {
+		background-color: #ddd;
+		}
+
+	/* Create an active/current tablink class */
+	ul.tab li a:focus, .active {
+		background-color: #ccc;
+		}
+
+	/* Style the tab content */
+	.tabcontent {
+		display: none;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		background-color: #E2E9ED;
+		border-top: none;
+		font-weight: bold;
+		-webkit-animation: fadeEffect 1s;
+		animation: fadeEffect 1s; /* Fading effect takes 1 second */
+		}
+
+	@-webkit-keyframes fadeEffect {
+		from {opacity: 0;}
+		to {opacity: 1;}
+		}
+
+	@keyframes fadeEffect {
+		from {opacity: 0;}
+		to {opacity: 1;}
+		}
+
+	.tabcontent a {
+		color: #FF580C;
+		}
+
+/* Table Styles */
+	table {
+		width: 100%;
+		font-weight: bold;
+		}
+
+	th {
+		font-size: 1.2em;
+		background-color: #E2E9ED;
+		color: #FF580C;
+		}
+	
+	td, th {
+	    border: 1px solid #FF580C;
+	    text-align: left;
+	    padding: 5px;
+		}
+
+	/* Uncomment when table grows
+	tr:nth-child(even) {
+	    background-color: #E2E9ED;
+		}
+	*/
+
+/* Form Styles */
+
+	.formContainer {
+		width: 100%;
+		}
+
+	.nameElement {
+		margin: 5px;
+		width: 218px;
+		}
+
+	.businessElement {
+		margin: 5px;
+		width: 450px;
+		}
+
+	.emailElement {
+		margin: 5px;
+		width: 450px;
+		}
+
+	.phoneElement {
+		margin: 5px;
+		width: 218px;
+		}
+
+	.websiteElement {
+		margin: 5px;
+		width: 218px;
+		}
+
+	.messageElement {
+		margin: 5px;
+		width: 450px;
+		height: 200px;
+		}
+
+	.submitElement {
+		margin: 5px;
+		color: #E2E9ED;
+		background-color: #4D9DE0;
+		}
+		
+/* Footer Styles */
+	footer {
+		height: 70px;
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		padding: 20px;
+		clear: left;
+		}
+	
+/* Picture Styles */
+	#pageLogo {
+		width: 200px;
+		float: left;
+		padding: 4px;
+		}
+
+/************************************************************/
+
+@media screen and (max-width:649px){
+	/* Header Styles */
+		.pageTitle {
+			font-size: 3.17em;
+			margin: 27px;
+			}
+	
+	/* Nav Menu Styles */
+		.menu-buttons a {
+			margin-right: 8px;
+			font-size: 1.3em;
+			}
+			
+	/* Picture Styles */
+		#pageLogo {
+			width: 100px;
+			}
+	
+	/* Tabbed Services Styles */
+	ul.tab li a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width:650px) and (max-width:949px){
+	/* Header Styles */
+		.pageTitle {
+			font-size: 3.59em;
+			margin: 27px 0px;
+			}
+	
+	/* Nav Menu Styles */
+		.menu-buttons a {
+			margin-right: 10px;
+			font-size: 1.52em;
+			}
+	
+	/* Picture Styles */
+		#pageLogo {
+			width: 110px;
+			}
+	
+	/* Tabbed Services Styles */
+	ul.tab li a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width:950px) and (max-width:1199px){
+	/* Header Styles */
+		.pageTitle {
+			font-size: 6em;
+			margin: 15px 0px;
+			}
+	
+	/* Nav Menu Styles */		
+		.menu-buttons a {
+			margin-right: 15px;
+			font-size: 2.2em;
+			}
+	
+	/* Picture Styles */
+		#pageLogo {
+			width: 130px;
+			}	
+	
+	/* Tabbed Services Styles */
+	ul.tab li a {
+		font-size: 1.13em;
+	}
+}
+
+@media screen and (min-width:1200px){
+	/* Header Styles */
+		.pageTitle {
+			font-size: 6em;
+			margin: 15px 0px;
+			}
+	
+	/* Nav Menu Styles */
+		.menu-buttons a {
+			margin-right: 15px;
+			font-size: 2.2em;
+			}
+	
+	/* Picture Styles */
+		#pageLogo {
+			width: 130px;
+			}
+	
+	/* Tabbed Services Styles */
+	ul.tab li a {
+		font-size: 1.13em;
+	}
+}
